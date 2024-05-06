@@ -1,0 +1,12 @@
+test = []
+
+for i in range(3):
+  # subject, score
+  sub = input().split()
+  sub[1:] = map(int, sub[1:])
+  test.append(sub)
+
+print(test)
+
+for x in test:
+  print(f'subject is {x[0]} and score is {x[1]}')
